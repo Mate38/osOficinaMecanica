@@ -20,6 +20,7 @@ class CreateOrderServicesTable extends Migration
             $table->string('data_encerramento', 20)->nullable();
             $table->tinyInteger('status');
             $table->text('observacao')->nullable();
+            $table->string('valor_total', 10)->nullable();
             $table->timestamps();
             // FK
             $table->unsignedInteger('user_id');
