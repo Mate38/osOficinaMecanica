@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateServicesTable extends Migration
+class CreatePiecesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateServicesTable extends Migration
      */
     public function up()
     {
-        Schema::create('services', function (Blueprint $table) {
+        Schema::create('pieces', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome', 50)->unique();
+            $table->string('nome', 50);
+            $table->string('valor', 10); // Valor individual por peça
             $table->timestamps();
-            // FK
-            $table->unsignedInteger('setor_id');
-            $table->foreign('setor_id')->references('id')->on('sectors');
         });
     }
 
@@ -30,6 +28,6 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('services');
+        Schema::dropIfExists('pieces');
     }
 }

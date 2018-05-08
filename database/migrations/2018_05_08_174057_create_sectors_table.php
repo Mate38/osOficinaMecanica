@@ -15,8 +15,8 @@ class CreateSectorsTable extends Migration
     {
         Schema::create('sectors', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome');
-            $table->string('valor'); // Valor da mão-de-obra
+            $table->string('nome', 50);
+            $table->string('valor', 10); // Valor da mão-de-obra
             $table->timestamps();
         });
     }
