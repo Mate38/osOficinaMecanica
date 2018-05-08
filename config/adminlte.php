@@ -108,80 +108,58 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'MENU PRINCIPAL',
         [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Ordens de Serviço',
+            'url'  => 'ordemservico',
+            'icon' => 'file-o',
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text' => 'Nova Ordem de Serviço',
+            'url'  => 'novaordem',
+            'icon' => 'file',
         ],
-        'ACCOUNT SETTINGS',
         [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
+            'text' => 'Clientes',
+            'url'  => 'clientes',
+            'icon' => 'users',
+        ],
+        [
+            'text' => 'Serviços',
+            'url'  => 'servicos',
+            'icon' => 'wrench',
+        ],
+        [
+            'text' => 'Funcionários',
+            'url'  => 'funcionarios',
+            'icon' => 'male',
+        ],
+        [
+            'text' => 'Peças',
+            'url'  => 'pecas',
+            'icon' => 'truck',
+        ],
+        'CONFIGURAÇÕES',
+        [
+            'text' => 'Informações do usuário',
+            'url'  => 'usuario/infos',
             'icon' => 'user',
         ],
         [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
+            'text' => 'Trocar senha',
+            'url'  => 'usuario/senha',
             'icon' => 'lock',
         ],
+        'ÁREA RESTRITA',
         [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'Level One',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
+            'text' => 'Usuários',
+            'url'  => 'usuarios',
+            'icon' => 'users',
         ],
         [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
+            'text' => 'Parâmetros',
+            'url'  => 'parametros',
+            'icon' => 'cogs',
         ],
     ],
 
